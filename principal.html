@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos Gratuitos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+
+    <header class="encabezado-principal">
+        <div class="contenedor barra-navegacion">
+            
+            <a href="#inicio" class="enlace-logo">
+                <img src="img/logo.png" alt="Logo Escuela Ofimática" class="imagen-logo">
+                <h1 class="logotipo">Escuela<span>Ofimática</span></h1>
+            </a>
+
+            <nav class="menu-principal">
+                <a href="#inicio" class="enlace-menu">Inicio</a>
+                <a href="#cursos" class="enlace-menu">Cursos</a>
+                <a href="#registro" class="enlace-menu boton-destacado">Inscribirse</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="inicio" class="seccion-presentacion">
+            <div class="contenedor contenido-presentacion">
+                <h2 class="titulo-gigante">Domina las herramientas del futuro hoy</h2>
+                <p class="texto-descriptivo">Aprende Word, Excel y PowerPoint desde cero hasta nivel avanzado. Nuestros cursos son 100% gratuitos y diseñados para impulsar tu carrera.</p>
+                <a href="#cursos" class="boton-principal">Ver Cursos Disponibles</a>
+            </div>
+        </section>
+
+        <section id="cursos" class="seccion-cursos contenedor">
+    <h2 class="titulo-seccion">Impulsa tu Perfil Profesional</h2>
+    <p class="subtitulo-seccion">Domina las herramientas más demandadas por las empresas modernas.</p>
+    
+    <div class="cuadricula-cursos">
+        <article class="tarjeta-curso">
+            <div class="contenedor-imagen-curso">
+                <img src="img/word.png" alt="Clase de Word" class="imagen-curso foto-dinamica">
+                <div class="etiqueta-precio">¡100% GRATIS!</div>
+            </div>
+            <div class="contenido-tarjeta">
+                <h3 class="titulo-curso">Word: Documentos de Alto Impacto</h3>
+                <p class="descripcion-curso">Deja de pelear con los formatos. Aprende a estructurar oficios, reportes corporativos y tesis con acabados profesionales en tiempo récord.</p>
+                <button class="boton-abrir-modal" data-objetivo="modal-word">Ver Temario Completo</button>
+            </div>
+        </article>
+
+        <article class="tarjeta-curso">
+            <div class="contenedor-imagen-curso">
+                <img src="img/excel.png" alt="Clase de Excel" class="imagen-curso foto-dinamica">
+                <div class="etiqueta-precio">¡100% GRATIS!</div>
+            </div>
+            <div class="contenido-tarjeta">
+                <h3 class="titulo-curso">Excel: El Lenguaje de los Negocios</h3>
+                <p class="descripcion-curso">Conviértete en el analista que toda empresa necesita. Automatiza tareas aburridas, domina tablas dinámicas y formula como un experto.</p>
+                <button class="boton-abrir-modal" data-objetivo="modal-excel">Ver Temario Completo</button>
+            </div>
+        </article>
+
+        <article class="tarjeta-curso">
+            <div class="contenedor-imagen-curso">
+                <img src="img/ppt.png" alt="Clase de PowerPoint" class="imagen-curso foto-dinamica">
+                <div class="etiqueta-precio">¡100% GRATIS!</div>
+            </div>
+            <div class="contenido-tarjeta">
+                <h3 class="titulo-curso">PowerPoint: Presentaciones que Venden</h3>
+                <p class="descripcion-curso">Olvida las diapositivas aburridas. Cautiva a tu audiencia diseñando presentaciones dinámicas, modernas y altamente persuasivas.</p>
+                <button class="boton-abrir-modal" data-objetivo="modal-powerpoint">Ver Temario Completo</button>
+            </div>
+        </article>
+    </div>
+</section>
+
+
+<div id="modal-word" class="fondo-modal oculto">
+    <div class="caja-modal">
+        <span class="boton-cerrar-modal">&times;</span>
+        <div class="encabezado-modal word-fondo">
+            <h3>Certifícate en Microsoft Word</h3>
+        </div>
+        <div class="cuerpo-modal">
+            <p><strong>¿Qué lograrás en este curso?</strong></p>
+            <ul class="lista-beneficios">
+                <li>Configuración experta de estilos y plantillas corporativas.</li>
+                <li>Manejo avanzado de índices, referencias y bibliografías automáticas.</li>
+                <li>Combinación de correspondencia para correos masivos.</li>
+            </ul>
+            <p class="llamado-accion-modal">¡Asegura tu lugar antes de que se agote el cupo!</p>
+            <button class="boton-principal ir-a-registro" onclick="document.getElementById('registro').scrollIntoView(); cerrarTodasLasModales();">Inscribirme Ahora</button>
+        </div>
+    </div>
+</div>
+
+<div id="modal-excel" class="fondo-modal oculto">
+    <div class="caja-modal">
+        <span class="boton-cerrar-modal">&times;</span>
+        <div class="encabezado-modal excel-fondo">
+            <h3>Certifícate en Microsoft Excel</h3>
+        </div>
+        <div class="cuerpo-modal">
+            <p><strong>¿Qué lograrás en este curso?</strong></p>
+            <ul class="lista-beneficios">
+                <li>Dominio de fórmulas lógicas (SI, BUSCARV, INDICE, COINCIDIR).</li>
+                <li>Creación de Dashboards (Tableros de control) visualmente atractivos.</li>
+                <li>Introducción a Macros para automatizar trabajo manual.</li>
+            </ul>
+            <p class="llamado-accion-modal">¡Destaca en tu próxima entrevista de trabajo!</p>
+            <button class="boton-principal ir-a-registro" onclick="document.getElementById('registro').scrollIntoView(); cerrarTodasLasModales();">Inscribirme Ahora</button>
+        </div>
+    </div>
+</div>
+
+<div id="modal-powerpoint" class="fondo-modal oculto">
+    <div class="caja-modal">
+        <span class="boton-cerrar-modal">&times;</span>
+        <div class="encabezado-modal powerpoint-fondo">
+            <h3>Certifícate en PowerPoint</h3>
+        </div>
+        <div class="cuerpo-modal">
+            <p><strong>¿Qué lograrás en este curso?</strong></p>
+            <ul class="lista-beneficios">
+                <li>Psicología del color y diseño de layouts profesionales.</li>
+                <li>Animaciones y transiciones avanzadas (Morph).</li>
+                <li>Creación de infografías y material gráfico publicitario.</li>
+            </ul>
+            <p class="llamado-accion-modal">¡Aprende a comunicar tus ideas como un líder!</p>
+            <button class="boton-principal ir-a-registro" onclick="document.getElementById('registro').scrollIntoView(); cerrarTodasLasModales();">Inscribirme Ahora</button>
+        </div>
+    </div>
+</div>
+
+        <section id="registro" class="seccion-registro">
+            <div class="contenedor contenedor-formulario">
+                <h2 class="titulo-seccion texto-blanco">Inscríbete a un Curso</h2>
+                <p class="texto-blanco centrado">Llena el siguiente formulario para asegurar tu lugar.</p>
+                
+                <form id="formulario-inscripcion" class="formulario" action="procesar_registro.php" method="POST">
+                    <div class="grupo-entrada">
+                        <label for="nombre" class="etiqueta">Nombre Completo</label>
+                        <input type="text" id="nombre" name="nombre" class="campo-entrada" placeholder="Ingresa tu nombre">
+                    </div>
+
+                    <div class="grupo-entrada">
+                        <label for="correo" class="etiqueta">Correo Electrónico</label>
+                        <input type="email" id="correo" name="correo" class="campo-entrada" placeholder="ejemplo@correo.com">
+                    </div>
+
+                    <div class="grupo-entrada">
+                        <label for="curso" class="etiqueta">Selecciona el Curso</label>
+                        <select id="curso" name="curso" class="campo-entrada">
+                            <option value="">-- Elige un curso --</option>
+                            <option value="Word">Microsoft Word</option>
+                            <option value="Excel">Microsoft Excel</option>
+                            <option value="PowerPoint">Microsoft PowerPoint</option>
+                        </select>
+                    </div>
+
+                    <div id="mensaje-error" class="mensaje-alerta oculto"></div>
+
+                    <button type="submit" class="boton-enviar">Completar Inscripción</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="contenedor">
+            <p>&copy; 2026 Escuela Ofimática. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
